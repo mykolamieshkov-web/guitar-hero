@@ -1,0 +1,131 @@
+.banner {
+width: 100%;
+height: 586px;
+
+
+
+
+		&__composition {
+		height: inherit;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		}
+
+		&__text--column {
+			width: 469px;
+			height: 291px;
+			display: flex;
+			justify-content: flex-start;
+			align-items: flex-start;
+			flex-flow: column nowrap;
+			padding: 4px 8px;
+
+
+		}
+
+		&__title {
+			width: 469px;
+			height: 134px;
+			margin: 0 0 36px 0;
+			h1 {
+			font-weight: 600;
+			line-height: calc(67 / 56 * 100%);
+			letter-spacing: 0%;
+			text-align: left;
+			font-size: calc(56px / 1.618);
+			max-width: 438px;
+			min-height: 134px;
+
+
+			}
+			span {
+			color: var(--accent-color);
+			}
+		}
+
+		&__subtitle {
+			width: 342px;
+			height: 42px;
+			margin: 0 0 36px 0;
+			p {
+				max-width: 342px;
+				min-height: 42px;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: calc(24 / 16 * 100%);
+				letter-spacing: 0%;
+				text-align: left;
+			}
+
+		}
+
+		&__buttons--row {
+			width: 312px;
+			height: 60px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-flow: row nowrap;
+
+		}
+
+		&__button--accent {
+			width: 192px;
+			height: 60px;
+			display: inline-flex;
+			justify-content: center;
+			align-items: center;
+			padding: 18px 48px;
+			border-radius: 48px;
+			background-color: var(--accent-color);
+			transition: all 0.6s ease;
+			// text styles
+			color: rgba(255, 255, 255, 1);
+			font-size: 16px;
+			font-weight: 600;
+			line-height: calc(24 / 16 * 100%);
+			letter-spacing: 0%;
+			@include media.hover {
+				opacity: 0.4;
+				transform: scale(1.2);
+			}
+
+
+		}
+
+		&__icons {
+			width: 80px;
+			height: 32.11px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			flex-flow: row nowrap;
+		}
+
+		&__decoration {
+                width: 672px;
+                height: 586px;
+                background-image: url('/img/Banner/01-banner.png');
+                background-position: center;
+                background-repeat: no-repeat;
+                border-radius: 0px 0px 151px 360px;
+                backdrop-filter: blur(40px);
+		}
+
+		&__circle--icon {
+                width: 80px;
+                aspect-ratio: 1;
+                border-radius: 50%;
+                background-color: #FFFFFF;
+		padding: 8px;
+		display: flex;
+		justify-content: center;
+			margin-top: 80%;
+			margin-left: 50%;
+			img {
+				margin-top: 10px;
+			}
+		}
+}

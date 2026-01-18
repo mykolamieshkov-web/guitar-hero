@@ -1,0 +1,8 @@
+// mixins file:
+@mixin btn {
+        display: inline-flex;
+        width: auto;
+        height: auto;
+        padding: 10px 16px;
+        border-radius: 32px;
+}
