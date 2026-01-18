@@ -7,7 +7,7 @@ const Header = ( ) => { // вызов функции
        <div className="header__container">
                <div className="header__navigation">
                  <div className="header__logo">
-                         <img src="/img/icons/01.svg" alt="rytm shop orange butterfly icon"  loading='lazy' width={20} height={20} />
+                         <img src="img/icons/01.svg" alt="rytm shop orange butterfly icon"  loading='lazy' width={20} height={20} />
                          <h3>Rhythm</h3>
                  </div>
                  <nav className="header__links">
